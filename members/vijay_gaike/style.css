@@ -4,12 +4,22 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-image: url(../../assets/images/bg-pattern-desktop.svg);
-    height: 100%;
+    height: 100vh;
     position: relative;
+}
+
+.head > img {
+    width: 130px;
 }
 
 .lady-image > img {
@@ -20,15 +30,29 @@
 }
 
 .text-content{
+    max-width: 870px;
+    margin-top: 50px;
+    margin-left: 130px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+.desc{
     max-width: 50%;
-    max-height: 100vh;
     position: absolute;
+    top: 50%;
+    translate: 0% -50%;
 }
 
 .desc > h2{
     color: hsl(0, 6%, 24%);
     font-family: Josefin Sans;
     font-weight: 600;
+    font-size: 50px;
+    margin: 3px;
+    letter-spacing: 12px;
 }
 
 #we-are{
@@ -39,5 +63,64 @@
 .desc > p{
     color: hsl(0, 36%, 70%);
     font-family: Josefin Sans;
+    font-size: 16px;
     font-weight: 400;
+    margin-top: 20px;
+    line-height: 25px;
+
+}
+
+.user-input{
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid hsl(0, 36%, 70%);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+    padding-left: 15px;
+}
+
+#next-button{
+    appearance:none;
+    -webkit-appearance:none;
+    height: 100%;
+    border:none;
+    color:#fff;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    font-weight:600;
+    border-radius:20px;
+    height: calc(100% + 1px);
+    box-shadow: 0 10px 25px -2px hsla(0, 36%, 70%, 0.767);
+    position: relative;
+    top: -1%;
+    left: 2%;
+}
+
+#next-button:hover{
+    cursor: pointer;
+    height: calc(100% + 3px);
+    top: -3%;
+    left: 3%;
+    box-shadow: 0 10px 10px -1px hsla(0, 36%, 70%, 0.767);
+}
+
+#next-button > img{
+    height: calc(100% - 24px);
+    vertical-align: middle;
+}
+
+.email-input{
+    padding: 10px;
+    border: 0;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+.email-input:focus{
+    outline: none;
 }
