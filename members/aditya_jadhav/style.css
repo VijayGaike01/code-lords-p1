@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100vh;
+    background-image: url("../../assets/images/bg-pattern-desktop.svg");
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo{
+    padding-top : 60px;
+    padding-left: 150px;
+    max-width: 20%;
+}
+
+.sideimg{
+    max-width: 100%;
+    max-height: 100vh;
+    position: absolute;
+    right: 0;
+}
+
+.head{
+    padding: 150px;
+}
+
+.head > h1{
+    position: relative;
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    font-family: Josefin Sans;
+    font-size: 50px;
+    margin: 3px;
+    letter-spacing: 12px;
+}
+
+.head > h1 > span{
+    color: hsl(0, 6%, 24%);
+    font-weight: 600;
+}
+
+.para{
+    max-width: 26%;
+    position: absolute;
+    left: 10%;
+    top: 58%;
+    color: hsl(0, 36%, 70%);
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.searchbar{
+    position: relative;
+    left: 20%;
+    top: 80%;
+
+    margin-top: 30px;
+    max-width: 56%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid hsl(0, 36%, 70%);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+    padding-left: 15px;
+    
+}
+
+#next-button{
+    appearance:none;
+    -webkit-appearance:none;
+    height: 100%;
+    border:none;
+    color:#fff;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    font-weight:600;
+    border-radius:20px;
+    height: calc(100% + 1px);
+    box-shadow: 0 10px 25px -2px hsla(0, 36%, 70%, 0.767);
+    position: relative;
+    top: -1%;
+    left: 2%;
+}
+
+#next-button:hover{
+    cursor: pointer;
+    height: calc(100% + 3px);
+    top: -3%;
+    left: 3%;
+    box-shadow: 0 10px 10px -1px hsla(0, 36%, 70%, 0.767);
+}
+
+#next-button > img{
+    height: calc(100% - 24px);
+    vertical-align: middle;
+}
+
+.input-mail{
+    padding: 10px;
+    border: 0;
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+.input-mail:focus{
+    outline: none;
+}
+
